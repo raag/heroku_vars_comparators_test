@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  heroku_vars_comparator_job:
+    runs-on: ubuntu-latest
+    name: A job to compare heroku vars
+    steps:
+      - name: compare
+        id: compare
+        uses: raag/heroku_vars_comparator@v1
+        with:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          APP_1: ${{ secrets.APP_1 }}
+          APP_2: ${{ secrets.APP_2 }}
