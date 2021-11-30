@@ -3,7 +3,7 @@ on: [push]
 jobs:
   heroku_vars_comparator_job:
     runs-on: ubuntu-latest
-    name: A job to compare heroku vars
+    name: Compare_vars_mt_dev
     steps:
       - name: compare
         id: compare
