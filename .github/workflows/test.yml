@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: compare
         id: compare
-        uses: raag/heroku_vars_comparator@v1.0.1
+        uses: raag/heroku_vars_comparator@v1.0.2
         with:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
           APP_1: ${{ secrets.APP_1 }}
